@@ -1,0 +1,5 @@
+farm.calendar:
+  title: Calendar
+  parent: farm.base
+  route_name: view.farm_calendar.page
+  weight: 0

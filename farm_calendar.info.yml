@@ -3,3 +3,5 @@ description: Provides a simple calendar display of farmOS logs.
 type: module
 package: farmOS Contrib
 core_version_requirement: ^9
+dependencies:
+  - fullcalendar_view:fullcalendar_view

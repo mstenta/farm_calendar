@@ -14,5 +14,8 @@
           "name": "Michael Stenta",
           "email": "mike@farmier.com"
       }
-  ]
+  ],
+  "require": {
+    "drupal/fullcalendar_view": "^5.0"
+  }
 }

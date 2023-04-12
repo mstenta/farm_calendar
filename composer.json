@@ -16,6 +16,6 @@
       }
   ],
   "require": {
-    "drupal/fullcalendar_view": "^5.0"
+    "drupal/calendar_view": "^2.0"
   }
 }

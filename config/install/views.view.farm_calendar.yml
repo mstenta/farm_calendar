@@ -5,7 +5,7 @@ dependencies:
     module:
       - farm_calendar
   module:
-    - fullcalendar_view
+    - calendar_view
     - log
     - options
     - user
@@ -36,7 +36,7 @@ display:
           entity_field: timestamp
           plugin_id: log_field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -103,7 +103,7 @@ display:
           entity_field: status
           plugin_id: field
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -170,7 +170,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: '{{ name }} - {{ status }}'
+            text: '{{ name }} ({{ status }})'
             make_link: false
             path: ''
             absolute: false
@@ -222,9 +222,12 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: none
+        type: calendar_month
         options:
           offset: 0
+          label_format: F
+          use_previous_next: 0
+          display_reset: 1
       exposed_form:
         type: basic
         options:
@@ -247,45 +250,18 @@ display:
       arguments: {  }
       filters: {  }
       style:
-        type: fullcalendar_view_display
+        type: calendar_month
         options:
-          default_date_source: now
-          defaultDate: ''
-          start: timestamp
-          end: ''
-          title: name
-          left_buttons: 'prev,next today'
-          right_buttons: 'dayGridMonth,timeGridWeek,timeGridDay,listYear'
-          default_view: dayGridMonth
-          firstDay: '0'
-          minTime: '00:00:00'
-          maxTime: '23:59:59'
-          nav_links: 1
-          timeFormat: 'hh:mm a'
-          allowEventOverlap: 1
-          updateAllowed: 1
-          updateConfirm: 1
-          defaultLanguage: en
-          languageSelector: 0
-          dialogWindow: 0
-          openEntityInNewTab: 1
-          dialogModal: 0
-          createEventLink: 0
-          eventLimit: '2'
-          slotDuration: '00:30:00'
-          tax_field: ''
-          vocabularies: ''
-          color_bundle:
-            activity: '#cc0000'
-            harvest: '#f57900'
-            input: '#75507b'
-            observation: '#729fcf'
-            seeding: '#4e9a06'
-            transplanting: '#4e9a06'
-          rrule: ''
-          duration: ''
-          bundle_type: ''
-          classes: ''
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          calendar_display_rows: 0
+          calendar_fields:
+            timestamp: timestamp
+          calendar_weekday_start: '1'
+          calendar_sort_order: ASC
+          calendar_timestamp: 'this month'
+          calendar_query_filtering: 1
       row:
         type: fields
         options:

@@ -1,3 +1,7 @@
+calendar:
+  css:
+    theme:
+      css/calendar.css: { }
 toolbar:
   css:
     theme:

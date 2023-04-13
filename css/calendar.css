@@ -1,0 +1,37 @@
+table.calendar-view-table li span.dot {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #3498db;
+  border: 2px solid #3498db;
+  border-radius: 50%;
+}
+table.calendar-view-table span.dot.activity {
+  background-color: #f1c40f;
+  border-color: #f1c40f;
+}
+table.calendar-view-table span.dot.harvest {
+  background-color: #e67e22;
+  border-color: #e67e22;
+}
+table.calendar-view-table span.dot.input {
+  background-color: #9b59b6;
+  border-color: #9b59b6;
+}
+table.calendar-view-table span.dot.observation {
+  background-color: #2980b9;
+  border-color: #2980b9;
+}
+table.calendar-view-table span.dot.medical,
+table.calendar-view-table span.dot.maintenance {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+table.calendar-view-table span.dot.seeding,
+table.calendar-view-table span.dot.transplanting {
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+table.calendar-view-table li span.dot.Pending {
+  background-color: transparent;
+}

@@ -310,7 +310,23 @@ display:
         type: tag
         options: {  }
       empty: {  }
-      sorts: {  }
+      sorts:
+        timestamp:
+          id: timestamp
+          table: log_field_data
+          field: timestamp
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: log
+          entity_field: timestamp
+          plugin_id: log_standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
       arguments: {  }
       filters: {  }
       style:

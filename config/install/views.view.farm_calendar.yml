@@ -10,7 +10,7 @@ dependencies:
     - options
     - user
 id: farm_calendar
-label: 'farmOS Calendar'
+label: 'Farm Calendar'
 module: views
 description: ''
 tag: ''

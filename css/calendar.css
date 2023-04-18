@@ -32,6 +32,6 @@ table.calendar-view-table span.dot.transplanting {
   background-color: #2ecc71;
   border-color: #2ecc71;
 }
-table.calendar-view-table li span.dot.Pending {
+table.calendar-view-table li span.dot.pending {
   background-color: transparent;
 }

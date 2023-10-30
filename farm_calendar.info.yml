@@ -2,7 +2,7 @@ name: farmOS Calendar
 description: Provides a simple calendar display of farmOS logs.
 type: module
 package: farmOS Contrib
-core_version_requirement: ^9
+core_version_requirement: ^9 || ^10
 dependencies:
   - calendar_view:calendar_view
   - log:log

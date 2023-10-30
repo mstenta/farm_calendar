@@ -16,6 +16,7 @@
       }
   ],
   "require": {
-    "drupal/calendar_view": "^2.0"
+    "drupal/calendar_view": "^2.0",
+    "farmos/farmos": "^2 || ^3"
   }
 }
